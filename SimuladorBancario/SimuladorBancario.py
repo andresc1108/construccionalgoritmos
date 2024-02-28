@@ -1,7 +1,33 @@
+from CuentaCorriente import CuentaCorriente
+from CuentaAhorro import CuentaAhorro
+
+
 class SimuladorBancario:
-    #Aqui va el codigo del empleado
-    """-------------------------------------
-    atributos"""
-    cedula=0
-    nombre=0
-    mesactual=0
+    """----------------------
+    #Atributos
+    -------------------------"""
+    Cedula= 0
+    Nombre= 0
+    MesActual= 0
+
+    """-------------------------------
+    #Asociaciones
+    ----------------------------------"""
+    CuentaCorriente = CuentaCorriente()
+    CuentaAhorro = CuentaAhorro()
+
+    """------------------------------
+    #Metodos
+    ----------------------------------"""
+
+    def CalcularSaldoTotal(self):
+        #Aqui va el codigo
+        return "Este es el saldo total: "+self.CuentaCorriente.Saldocorriente()+ self.CuentaAhorro.ConsultarSaldo()
+    
+    def ConsignarCuentaCorriente(self.saldo):
+        #Aqui va el codigo
+        return self.sald
+
+    def TrasferirSaldoCuentaCorrienteCuentaAhorro(self.)
+
+
