@@ -1,7 +1,10 @@
 class CuentaAhorro:
-    #Aqui va el codigo del empleado
-    """-------------------------------------
-    atributos"""
-    saldo=0
-    interesmensual=0
-
+    """--------------------------
+    #Atributos
+    -----------------------------"""
+    Saldo= 0
+    InteresMensual= 0
+    
+     def ConsultarSaldo(self):
+        #Aquiva el codigo del metodo
+        return self.saldo
