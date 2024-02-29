@@ -1,22 +1,28 @@
 class CuentaCorriente:
-    """----------------------------------
-    #Atributos
-    -------------------------------------"""
-    saldo= 0
-
-    """----------------------------------
-    Metodos
-    -------------------------------------"""
+    
+    saldo = 0
+    
+    '''----------------------------------------------------------------
+    # Metodos
+    ----------------------------------------------------------------'''
+    
     def ConsultarSaldo(self):
-        #Aquiva el codigo del metodo
         return self.saldo
     
-    def ConsignarValor(self,saldo):
-        nSaldo = self.saldo + ""
-        self.saldo = nSaldo
-        return "ingrese un valor" + ""
+    def ConsignarMonto(self, monto):
+        # #Forma 1
+        # self.saldo += monto
+        # # Forma 2
+        # self.saldo = self.saldo + monto
+        # # Forma 3
+        total = self.saldo + monto
+        self.saldo = total
     
-    def RetirarValor(self,saldo):
-        nSaldo = self.saldo + ""
-        self.saldo = nSaldo
-        return "ingrese valor a retirar" + ""
+    def RetirarMonto(self, monto):
+        # #Forma 1
+        # self.saldo -= monto
+        # # Forma 2
+        # self.saldo = self.saldo - monto
+        # # Forma 3
+        total = self.saldo - monto
+        self.saldo = total
