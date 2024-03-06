@@ -47,4 +47,20 @@ class SimuladorBancario:
         saldoAhorros = self.ahorros.ConsultarSaldo()
         self.corriente.saldo += saldoAhorros
         self.ahorros.saldo = 0
+
+class empleado:
+
+    """----------------
+    Atributos
+    -------------------"""
+    TipoCliente= ""
+    """-----------------------
+    #1 = vip , 2 = platino y 3 = normal
+    -------------------------"""
+    def _init_(self, TipoCliente):
+            self.TipoCliente = TipoCliente
+
+    def CambiarTipoCliente (self, nTipoCliente):
+            self.TipoCliente = nTipoCliente
+            return None
         
