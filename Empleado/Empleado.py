@@ -5,8 +5,8 @@ class Empleado:
     """-------------------------------
     #Atributos
     ----------------------------------"""
-    nombre= "Carlos"
-    apellido= "Mina"
+    nombre= "Pepito"
+    apellido= "Perez"
     """-------------------------------
     #1 Masculino y 2 Femenino
     ----------------------------------"""
