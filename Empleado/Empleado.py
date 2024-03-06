@@ -79,3 +79,32 @@ class Empleado:
         return (total * 19.5) /100
         #forma 2 
         #return self.CalcularSalarioAnual() * 0.195
+
+    def __init__(self, nombre, apellido, sexo, salario, numeroHijos):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.sexo = sexo
+        self.salario = salario
+        self.numeroHijos = numeroHijos
+
+    def ConsultarNumeroHijos(self):
+        return self.numeroHijos
+    
+    def CalcularAuxilioEducativo(self):
+        AuxilioEducativo = self.salario * self.numeroHijos * 0.05
+        return AuxilioEducativo
+    
+    def CalcularAuxilioEducativo(self, PorcentajeSalario):
+        AuxilioEducativo = self.salario * self.numeroHijos * PorcentajeSalario
+        return AuxilioEducativo
+    
+    def CalcularDiferenciaSalarial(self, SalarioEmpleadoDos):
+        DiferenciaSalarial = self.salario - SalarioEmpleadoDos
+        return DiferenciaSalarial
+    
+    def CambiarSalario(self, nuevoSalario):
+        #Aqui va el codigo del metodo
+        self.salario = nuevoSalario
+        return "El salario se ha actualizado"+self.salario
+
+
