@@ -69,7 +69,7 @@ class Empresa:
 	    # @return Costo promedio por minuto.
     '''
     def darCostoPromedioMinuto(self): 
-        prom = self.darTotalNumeroLlamadas() / self.darTotalMinutos()
+        prom = self.darTotalCostoLlamadas() / self.darTotalMinutos() 
         return prom 
         # TODO Parte3 PuntoH: Completar el m�todo seg�n la documentaci�n dada.
     
@@ -148,7 +148,7 @@ class Empresa:
         # @param pMinutos N�mero de minutos de la llamada. pMinutos > 0.
     '''
     def agregarLlamadaCelularLinea3(self, pMinutos):
-        self.linea3.agregarLlamadaCelular
+        self.linea3.agregarLlamadaCelular(pMinutos)
         #TODO Parte3 PuntoN: Completar el m�todo seg�n la documentaci�n dada.
     
     '''
@@ -156,13 +156,11 @@ class Empresa:
         # <b>post: </b> Se reinici� la llamada a la l�nea 1, 2 y 3. 
     '''
     def reiniciar(self):
-        self.linea1.reiniciar()
-        # // TODO Parte3 PuntoB: Completar el m�todo para reiniciar las lineas 2 y 3.
-    def reiniciar2 (self):
+        self.linea1.reiniciar() 
         self.linea2.reiniciar()
-
-    def reiniciar3 (self):
         self.linea3.reiniciar()
+        
+        
     '''----------------------------------------------------------------
     # Puntos de Extensi�n
     ----------------------------------------------------------------'''
